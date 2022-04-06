@@ -1,0 +1,200 @@
+/* colors */
+.text-black {
+  color: black;
+}
+
+/* text */
+.sect-title {
+  font-size: 1.44em;
+}
+.sect-desc {
+  font-size: 0.83em;
+}
+
+.hero-main {
+  margin-top: 75px;
+  position: relative;
+  min-height: 53vh;
+  /* min-height: 450px; */
+  width: 100vw;
+  overflow: hidden;
+  background-image:url('../img/car-racing-purp-logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-main h1 {
+  font-size: 3.4em;
+  font-weight: 300;
+  text-shadow: 2px 2px 7px #222222;
+}
+.hero-main h2 {
+  font-size: 0.9em;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #000000;
+}
+.hero-main h3 {
+  font-size: 1.22em;
+  font-weight: 100;
+  line-height: 25px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px #000000;
+}
+/* min-width: 150px; */
+.key-points-row{
+  background: #f1f1f1;
+   /*margin-top: 1.0em;*/
+   width: auto;
+}
+
+.key-points-item {
+  vertical-align: text-top;
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+  min-width: 150px;
+}
+
+.key-points-item h1 {
+  font-size: 1.48em;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  padding-top: 15px;
+  padding-bottom: 0.4em;
+  color: #120c33b3;
+}
+
+.key-points-item p {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #666666;
+  font-size: 0.66em;
+}
+
+#howAndWhy .why-item img{
+  width: 30px;
+}
+#howAndWhy .why-item p{
+  font-weight: 500;
+  font-size: 0.83em;
+  color: black;
+}
+#howAndWhy .why-desc{
+  font-size: 0.83em;
+  font-weight: 300;
+}
+#howAndWhy .works-desc p{
+  font-size: 0.83em;
+  font-weight: 100;
+  color: black;
+}
+#howAndWhy .works-desc img{
+  width: 50px;/* 3em; */
+}
+
+
+.choose-title {
+  /* font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  padding-bottom: .25em; */
+  font-size: 1.45em;
+}
+
+.who-needs #leftList .list-group-item, .who-needs #rightList .list-group-item{
+  font-size: 1.44em;
+}
+
+.who-needs-item-font{
+  margin-left: 0;
+}
+
+.who-needs img {
+  height: auto;
+  width: 40px;
+}
+
+.who-needs #leftList .list-group-item img, 
+.who-needs #rightList .list-group-item img {
+  margin-right: 3.5em;
+  margin-left: 2em;
+}
+
+@media (max-width: 880px) {
+  .who-needs #leftList .list-group-item, .who-needs #rightList .list-group-item {
+    font-size: 1.2em;
+  }
+  .who-needs #leftList .list-group-item img, 
+  .who-needs #rightList .list-group-item img {
+    margin-right: 2.2em;
+    margin-left: 1.5em;
+  }
+
+  .hero-main h1{
+    font-size: 3.3em;
+  }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden
+}
+
+.customer-logos-row{
+    background: #ffffff;
+    width: 100%;
+    /*padding-top: 1em;*/
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.customer-logos-font {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #666666;
+    font-size:  .8em;
+    padding-top: 1.7em;
+    text-align: center;
+}
+.customer-logos-blocks {
+    vertical-align: text-top;
+    align-items: top;
+    padding-bottom: 1em;
+    margin-top: .7em;
+    /* display: flex;
+    margin-left: 1em;
+    margin-right: 1em; */
+}
+.customer-logos-item {
+    vertical-align: text-top;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    /*margin-right: 1em;
+    margin-left: 1em;*/
+    text-align: center;
+}
+.customer-logos-item img{
+    vertical-align: text-top;
+
+}
+.customer-logos-item h1 {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size:  1.2em;
+    font-weight: 400;
+    padding-bottom: 0.4em;
+    color: #666666;
+    letter-spacing: 0.05em;
+
+}
+.customer-logos-item p {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #444444;
+    font-size:  .8em;
+    padding-top: .7em;
+}
+.customer-logos-item h4 {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #444444;
+    font-size:  .8em;
+    font-weight: bold;
+}

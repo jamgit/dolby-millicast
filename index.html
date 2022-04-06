@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Real-Time Video Streaming Platform - Millicast</title>
+  <meta name="description" content="Live streaming platform for broadcasting audio and video with sub-second, real-time latency. Start for free and stream to your viewers instantly."/>
+  <meta name="keywords" content="Livestream, Broadcaster, Ultra-low latency CDN, WebRTC, Broadcasting, Real-time, sub-second streaming" />
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MillicastRTC">
+  <meta name="twitter:title" content="Millicast - Real-Time Video Streaming Platform">
+  <meta name="twitter:description" content="Use Millicast to broadcast your live audio and video streams in sub-second latency to any device at any scale.">
+  <meta name="twitter:image" content="https://millicast.com/img/millicast-logo-solo-small.jpg">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122476980-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122476980-1');
+  </script>
+
+
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+  <!-- Theme CSS -->
+  <link href="css/millicast.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/pricing.css" rel="stylesheet">
+
+
+
+    <style>
+    .row.text-center > div {
+      display: inline-block;
+      float: none;
+    }
+    .mb-0{
+      margin-bottom: 0;
+    }
+    #custLogoView {
+      background: #ffffff; 
+      padding-left: 90px;
+    }
+    @media (max-width: 991px) {
+      #custLogoView {
+        padding-left: 0px;
+      }
+    }
+  </style>
+  
+</head>
+
+<body id="page-top">
+<div class="">
+  <!-- Navigation -->
+  <nav id="pageNav" class="navbar navbar-expand-md fixed-top navbar-light bg-light no-gutters">
+    <a class="navbar-brand" href="../" style="margin-left: 9px;">
+      <img src="img/icons/millicast-logo-h.svg" alt="Millicast - Real-Time CDN"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageNavCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div id="pageNavCollapse" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="page-scroll" href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://millicast.medium.com/" target="_blank">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://docs.millicast.com/docs" target="_blank">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://docs.millicast.com/reference/welcome-rest-api" target="_blank">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="what-is-low-latency-streaming/">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="pricing/">Pricing</a>
+        </li>
+
+        <li class="nav-item"> 
+          <a class="page-scroll" href="https://dash.millicast.com/#/signin">
+            Login
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="page-scroll" href="/pricing">
+            <b>Sign Up</b>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero-main d-flex justify-content-center align-items-center p-3" >
+    <div class="text-white text-center d-flex flex-column align-items-center">
+      <h1 id="main-hero-title">The Fastest Streaming on Earth.</h1>
+      <h3 class="mb-4">Millicast is for those who want their live video delivered in real-time, sub-second latency to audiences of any size.</h3>
+      <a href="https://dash.millicast.com/#/signup?planId=28" target="_blank">
+        <button class="btn btn-primary">Try for Free</button>
+      </a>
+      <a href="https://demo.millicast.com" target="_blank">
+        <button class="btn-alt btn-alt-secondary">Experience a Live Demo</button>
+      </a>
+    </div>
+  </div>
+ 
+
+
+  <div class="key-points-row ">
+    <div class="row mx-5">
+
+      <div class="col key-points-item">
+        <div>
+          <img src="img/icons/latency-icon.svg" class="img-fluid" alt="Live video delivery with the lowest possible latency." />
+        </div>
+        <div>
+          <h1>Latency</h1>
+          <p>Average 200-500 milliseconds global delivery</p>
+        </div>
+      </div>
+
+      <div class="col key-points-item">
+        <div>
+          <img src="img/icons/devices-icon.svg" class="img-fluid" alt="WebRTC CDN delivers to all devices." align="top"/>
+        </div>
+        <div>
+          <h1>Reach</h1>
+          <p>Stream to all devices without plug-ins, players, or protocols.</p>
+        </div>
+      </div>
+
+      <div class="col key-points-item">
+        <div>
+          <img src="img/icons/quality-icon.svg" class="img-fluid" alt="Real-time HD quality video streaming." />
+        </div>
+        <div>
+          <h1>Quality</h1>
+          <p>Support for the latest codecs</p>
+        </div>
+      </div>
+      
+      <div class="col key-points-item">
+        <div>
+          <img src="img/icons/cost-icon.svg" class="img-fluid" alt="Affordable Ultra low latency CDN." />
+        </div>
+        <div>
+          <h1>Affordability</h1>
+          <p>Simple, transparent, all-inclusive, monthly based pricing</p>
+        </div>
+      </div>
+
+      <div class="col key-points-item">
+        <div>
+          <img src="img/icons/scale-icon.svg" class="img-fluid" alt="WebRTC Streaming for large scale delivery." />
+        </div>
+        <div>
+          <h1>Scale</h1>
+          <p>Global infrastructure, intelligent scaling, load tested with KITE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <section id="howAndWhy" class="choose sect-base bg-light">
+
+    <div class="row">
+      <div class="col-xs-10 offset-xs-1 col-sm-5 offset-sm-1 mt-4">
+      <h1 class="choose-title scdark" >How it Works</h1>
+        <div> 
+          <div class="works-desc d-flex flex-row mb-3">
+            <img class="align-self-start mr-2" src="img/icons/camera-broadcast-icon.svg"/>
+            <p class="mb-0 "><b style="font-weight: 700;">Publish:</b> Simply use our online broadcaster from our Dashboard or OBS. For more advanced cases, use our API and SDKs from within your HTML, iOS or Android applications.</p>
+          </div>
+          <div class="works-desc d-flex flex-row">
+            <img class="align-self-start mr-2" src="img/icons/broadcast-viewer-icon.svg"/>
+            <p class="mb-0 works-desc"><b style="font-weight: 700;">View:</b> We provide you with a hosted, customizable, white-label video player of which you can simply share the URL, or embed within your application for your viewers to instantly begin viewing your real-time streams.</p>
+          </div>
+        </div>
+
+        <h1 class="choose-title scdark" style="padding-top:40px">How easy is it?</h1>
+        <div class="why-item d-flex flex-row mb-2 align-items-start">
+          <img class="mr-2" src="img/icons/millicast-bullet-1.svg"/>
+          <p class="mb-0 mt-1">Sign up for a free trial.</p>
+        </div>
+        <div class="why-item d-flex flex-row mb-2 align-items-start">
+          <img class="mr-2" src="img/icons/millicast-bullet-2.svg"/>
+          <p class="mb-0 mt-1">Create your Broadcast with a single click.</p>
+        </div>
+        <div class="why-item d-flex flex-row mb-4 align-items-start">
+          <img class="mr-2" src="img/icons/millicast-bullet-3.svg"/>
+          <p class="mb-0 mt-1">Click Start Broadcast and instantly begin sharing your live stream to your audience. Done.</p>
+        </div>
+
+        <div class="why-desc scdark">
+          With Millicast, there is no special player, standard HTML is all you need. It doesn’t get easier or more flexible than this.<br>
+          <a href="https://dash.millicast.com/#/signup?planId=28" target="_blank">
+          <button class="choose-btn">Try for Free</button></a>
+        </div>
+
+      </div>
+      <div class="col-xs-10 offset-xs-1 col-sm-5 mt-4">
+
+        <h1 class="choose-title text-black">Why Millicast?</h1>
+        <h2 class="sect-desc-alt scdark mb-4" style="font-size: 14px;font-weight: 400;">
+          Millicast is the fastest, easiest, and most advanced way to broadcast your video and audio 
+          streams to the world at sub-second latency.
+        </h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FGwg6XtVP8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  
+  <section class="who-needs sect-base bg-dark home-links">
+    
+    <div class="mb-30-extra-margin">
+      <h1 class="sect-title sclight">Who needs realtime streaming?</h1>
+      <p class="sect-desc sclight">
+        Those who need to live stream audio and video and ensure their audience receives the feed in less than 500 milliseconds.
+      </p>
+    </div>
+
+    <div id="itemsView" class="row">
+      
+      <div id="leftList" class="col-sm-6">
+        <div class="list-group who-needs-item-font m-2">
+         <div class="list-group-item">
+              <img src="img/icons/camera-broadcast-icon-white.svg" alt="Sub-second latency video streaming for Live Broadcasting" class=""/>
+              <span>Broadcasting</span>
+          </div>
+
+          <div class="list-group-item">
+          <a href="verticals/sub-second-latency-streaming-auctions-bidding/" target="_blank">
+            <img src="img/icons/auction-icon.svg" alt="Sub-second latency video streaming for Auctions"/>
+            <span>Auctions</span>
+          </a>
+          </div>
+
+          <div class="list-group-item">
+              <img src="img/icons/classroom-icon.svg" alt="Real time video streaming for eLearning and Virtual Classrooms" class=""/>
+              <span>E-Learning</span>
+            </a>
+          </div>
+
+          <div class="list-group-item">
+            <img src="img/icons/sports-icon.svg" alt="Realtime video streaming for Sports and Gaming" class=""/>
+            <span>Sports & Events</span>
+          </div>
+          <div class="list-group-item ">
+            <img src="img/icons/financial-icon.svg" alt="Ultra low latency video streaming for wall street trading" class=""/>
+            <span>Financial News</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="rightList" class="col-sm-6">
+        <div class="list-group who-needs-item-font m-2">
+          <div class="list-group-item">
+            <img src="img/icons/post-production-icon.svg" alt="Real-time, zero latency streaming for Post Production" class=""/>
+            <span>Post Production</span>
+          </div>
+          <div class="list-group-item">
+            <img src="img/icons/eSports-icon.svg" alt="eSports"/><span>Gaming & eSports</span>
+          </div>
+          <div class="list-group-item">
+            <img src="img/icons/vr-icon.svg" alt="Realtime latency audio and video streaming for VR" class=""/>
+            <span>AR/VR & Metaverse</span>
+          </div>
+          <div class="list-group-item">
+            <img src="img/icons/audience-icon.svg" alt="WebRTC large scale streaming for social media" class=""/>
+            <span>Audience Interactivity</span>
+          </div>
+          <div class="list-group-item">
+            <img src="img/icons/iot-icon.svg" alt="Realtime audio, video and data streaming for IoT" class=""/>
+            <span>Social Video</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+<div class="container customer-logos-row" style="max-width:100%">
+  <div class="customer-logos-font" >
+    THE BEST COMPANIES IN THE WORLD TRUST MILLICAST FOR REALTIME STREAMING
+  </div>
+</div>
+
+  <div id="custLogoView" class="" > 
+  <div class="row customer-logos-blocks" style="max-width: 1350px; margin-top: 0px; margin-left: auto; margin-right: auto;">
+
+    <div class="col-sm-12 col-md-2 customer-logos-item">
+      <div style="padding-top:0.6em;">
+        <img width="120" src="img/logos/nfl-logo.png" class="img-fluid" alt="Millicast customer testimonial NFL" align="top"/>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-2 customer-logos-item">
+      <div style="padding-top:0.7em;">
+        <img width="100" src="img/logos/nbc-logo.png" class="img-fluid" alt="Millicast customer testimonial NBC" align="top"/>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 customer-logos-item">
+      <div style="padding-top:3em;padding-bottom:0.8em;">
+        <img width="135" src="img/logos/cbs-logo.png" class="img-fluid" alt="Millicast customer testimonial CBS" align="top"/>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-2 customer-logos-item">
+      <div style="padding-top:1.2em">
+        <img width="140" src="img/logos/nasa-logo-1.png" class="img-fluid" alt="Millicast customer testimonial NASA" align="top"/>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-2 customer-logos-item">
+      <div style="padding-top:3em">
+        <img width="200" src="img/logos/Amazon_Prime_Video_logo.png" class="img-fluid" alt="Millicast customer testimonial AmazonPrime" align="top"/>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <section class="why-need sect-base bg-light">
+    <div class="mb-30 ">
+      <h1 class="sect-title scdark">Powerful Feature Set</h1>
+      <h2 class="sect-desc scdark">
+        We have been realtime streaming experts since 2002 and built Millicast specifically to be the best zero-latency streaming platform in the world. 
+<br>Millicast pushes WebRTC to the next level and sets a new standard for live streaming, allowing true real-time delivery to all devices. <!-- Streaming so instant it is like looking in a mirror. -->
+      </h2>
+    </div>
+    <div id="itemsView" class="container">
+
+      <div class="row">
+        <div class="col-sm-4">
+            <img src="img/icons/no-plugins.svg" alt="Plugin free pure WebRTC-based streaming platform."/>
+            <h1 class="item-title">100% Plug-in Free</h1>
+            <p>End-to-end WebRTC. Reach all devices without plugins, players, special protocols, SDKs or client-side framework requirements. Pure, universal, HTML</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/wave-icon.svg" alt="Built for the highest quality WebRTC live streaming."/>
+            <h1 class="item-title">Smoother Streaming</h1>
+            <p>Uniquely engineered for reliability and quality in the worst network conditions, and real-time means you never see any buffering.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/simulcast-icon.svg" alt="Simulcast streaming for the best user experience."/>
+            <h1 class="item-title">Simulcast</h1>
+            <p>Built-in support for providing your live stream at the bitrate most suitable to each of your viewers, including VP8 & H.264 codecs.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+            <img src="img/icons/obs-icon.svg" alt="Low latency WebRTC for OBS."/>
+            <h1 class="item-title">OBS Support</h1>
+            <p>Open Broadcaster Software (OBS) is the industry standard for live video publishing, so we’ve extended it for you to use with WebRTC.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/secure-icon.svg" alt="Secure realtime streaming service provider."/>
+            <h1 class="item-title">Secure</h1>
+            <p>Encryption is at the very core of WebRTC and we maintain this philosophy end-to-end across all areas of our systems.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/api-icon.svg" alt="SDKs for ultra low latency streaming."/>
+            <h1 class="item-title">API & SDKs</h1>
+            <p>Our API has been designed to make it easy to use Millicast in any environment. See our docs, SDKs and tutorials to get started.</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-4">
+            <img src="img/icons/analytics-icon.svg" alt="Analytics for the lowest possible latency."/>
+            <h1 class="item-title">Advanced Analytics</h1>
+            <p>We provide you with live and historic metrics to help you understand your audience and weigh the success of your real-time streaming.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/recording-icon.svg" alt="Record your realtime low latency streams."/>
+            <h1 class="item-title">Recording</h1>
+            <p>Our recording and replay API makes it simple for you to archive and replay your streams within any environment.</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/icons/experts-icon.svg" alt="Best supported WebRTC CDN in the world."/>
+            <h1 class="item-title">WebRTC Experts</h1>
+            <p>We&apos;re members of the W3C and IETF committees for WebRTC standards, as well as leading providers of global streaming infrastructure; you&apos;re in good hands.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <!--<section class="how-sect sect-base bg-dark">
+    <div class="mb-30">
+      <h1 class="sect-title sclight">System Overview</h1>
+    </div>
+    <div class="diag">
+      <img src="img/icons/millicast-diagram-outlines-purple.svg" alt="How it works.">
+    </div>
+  </section>-->
+
+
+  <section class="get-sect sect-base bg-light">
+    <div class="mb-30">
+      <h1 class="sect-title scdark">How do I get it?</h1>
+      <p class="sect-desc scdark">
+      Millicast is the best, lowest-latency solution enabling you to instantly stream your content in real-time. 
+      <br>Click below to sign up and start using Millicast today.
+      </p>
+    </div>
+    <div id="formView">
+        <a href="pricing/">
+          <button class="btn btn-primary">Get Started Now</button>
+        </a>
+    </div>
+  </section>
+
+
+  <!-- <footer class="main-footer">
+    <div class="row">
+
+      <div class="col-sm-6">
+
+        <ul class="breadcrumb" style="padding-top:7px;">
+          <li role="presentation">
+            <a href="#">&copy; 2021</a>
+          </li>
+          <li role="presentation">
+            <a href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
+          </li>
+          <li role="presentation">
+            <a href="about/">About</a>
+          </li>
+
+                <li>
+                    <a class="page-scroll" href="https://millicast.medium.com/" target="_blank">Blog</a>
+                </li>
+
+          <li role="presentation">
+              <a href="pricing/">Sign Up</a>
+          </li>
+          <li role="presentation">
+              <a href="privacy/">Privacy</a>
+          </li>
+          <li role="presentation">
+              <a href="contactus/">Contact</a>
+          </li>
+        </ul>
+
+      </div> 
+
+      <div class="col-sm-6">
+          <ul class="breadcrumb pull-right">
+            <li role="presentation">
+              <a href="https://twitter.com/millicastRTC" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li role="presentation">
+              <a href="https://medium.com/millicast" target="_blank">
+                <i class="fa fa-medium"></i>
+              </a>
+            </li>
+            <li role="presentation">
+                <a href="https://www.facebook.com/millicastRTC/" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li role="presentation">
+                <a href="#"><i class="fa fa-envelope-o" ></i> hello@millicast.com</a>
+            </li>
+            <li role="presentation">
+                <a href="#"><i class="fa fa-phone"></i> 213-340-4104</a>
+            </li>
+            <li role="presentation" class="contact">
+              <img src="img/icons/millicast-logo-light-grey.svg" alt="Real-Time CDN" />
+            </li>
+          </ul>
+      </div>
+    </div>
+  </footer> -->
+
+  <footer class="main-footer-sect d-flex align-items-center justify-content-lg-between flex-column flex-lg-row p-4 border-0">
+    
+      <div class="d-flex flex-wrap justify-content-center mb-2">
+        <div class="px-2">
+          <a href="#">&copy; 2021</a>
+        </div>
+        <div class="px-2">
+          <a href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
+        </div>
+        <div class="px-2">
+          <a href="../about/">About</a>
+        </div>
+        <div class="px-2">
+          <a class="page-scroll" href="https://millicast.medium.com/" target="_blank">Blog</a>
+        </div>
+        <div class="px-2">
+          <a href="https://dash.millicast.com/#/signup?planId=28">Sign Up</a>
+        </div>
+        <div class="px-2">
+          <a href="../privacy/">Privacy</a>
+        </div>
+        <div class="px-2">
+          <a href="../terms/">Terms</a>
+        </div>
+        <div class="px-2">
+          <a href="../contactus/">Contact</a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column-reverse flex-md-row align-items-center mb-2">
+        <div class="d-flex flex-row">
+          <div class="px-2">
+            <a href="https://twitter.com/millicastRTC" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <div class="px-2">
+            <a href="https://medium.com/@millicast" target="_blank">
+              <i class="fa fa-medium"></i>
+            </a>
+          </div>
+          <div class="px-2">
+            <a href="https://www.facebook.com/millicastRTC/" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row">
+          <div class="px-2">
+            <a href="#"><i class="fa fa-envelope-o" ></i> hello@millicast.com</a>
+          </div>
+        </div>
+        <div class="px-2">
+          <img src="img/icons/millicast-logo-light-grey.svg" alt="Real-Time CDN" style="height: 40px;"/>
+        </div>
+      </div>
+    
+  </footer>
+
+</div>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="js/xirsys.min.js"></script>
+
+
+
+
+<script>
+  window.intercomSettings = {
+    app_id: "cuc3ois2"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+
+</body>
+</html>

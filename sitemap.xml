@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://millicast.com/</loc>
+  <lastmod>2019-10-12T03:54:14+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://millicast.com/pricing/</loc>
+  <lastmod>2019-10-28T21:34:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/verticals/sub-second-latency-streaming-auctions-bidding/</loc>
+  <lastmod>2019-09-26T21:22:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/verticals/real-time-streaming-for-gambling-betting/</loc>
+  <lastmod>2019-09-26T21:22:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/about/</loc>
+  <lastmod>2019-10-10T20:52:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/privacy/</loc>
+  <lastmod>2019-02-19T21:22:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/contactus/</loc>
+  <lastmod>2019-09-05T21:28:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://millicast.com/terms/</loc>
+  <lastmod>2019-02-01T19:25:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://millicast.com/contact/</loc>
+  <lastmod>2019-09-05T21:29:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
