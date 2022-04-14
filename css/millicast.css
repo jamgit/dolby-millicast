@@ -293,26 +293,62 @@ fieldset[disabled] .btn-xl.focus {
 
 .btn-alt {
     margin: .2em;
-    padding: 4px 30px;
-    /*width: 220px;*/
+    padding: 4px 18px;
+    /* width: 220px; */
     font-size: 12px;
     text-decoration: none;
     border-radius: 6px;
 }
 
 .btn-primary {
-    background: #3fa21b;
-    border: 3px solid #3fa21b;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
+    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    padding: 12.5px 24px;
+    border: 1.5px solid;
+    border-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 126% 126%;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
 }
-
+/*.site-container .dbio-headalt2 .is-style-fill .wp-block-button__link, .site-container .dbio-tl-ir-v1-wh .is-style-fill .wp-block-button__link, .but-gradient .wp-block-button__link, .pricecol .is-style-fill .wp-block-button__link {
+    display: inline-block;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
+    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    padding: 12.5px 24px;
+    border: 1.5px solid;
+    border-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 126% 126%;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}*/
 .btn-alt-secondary {
     background: #f8f3ff;
     border: 1px solid #ffffff;
 }
 
 .btn-primary:hover {
-    background: #639d33;
-    border: 3px solid #639d33;
+    background: linear-gradient(0deg, rgba(62, 68, 254, 0.6), rgba(62, 68, 254, 0.6));
+    border-color: #3E49F4;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 14px rgb(62 68 254 / 26%);
 }
 
 .btn-primary a:link,
