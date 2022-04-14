@@ -3,7 +3,10 @@
 .text-black {
   color: #fff;
 }
-
+.row.text-center > div {
+      display: inline-block;
+      float: none;
+    }
 /* text */
 .sect-desc {
   max-width: 864px;
