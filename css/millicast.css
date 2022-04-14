@@ -860,8 +860,12 @@ a.pricing-button {
 .bg-light {
     background: #14141a !important;
 }
-.bg-dark {
+.who-needs.bg-dark {
     background: linear-gradient(180deg, #14141A 0%, #40308D 100%);
+
+}
+#pageNav.bg-dark {
+    background: #14141A !important;
 
 }
 
