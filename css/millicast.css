@@ -2106,7 +2106,7 @@ hr {
 .header-about {
     height: 50vh;
     background: white;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.65) 59%, white 100%), url("../img/about-background.jpg") no-repeat bottom left;
+    background: /* linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.65) 59%, white 100%),*/ url("../img/about-background-dbio.jpg") no-repeat bottom left;
     background-size: cover;
     text-align: center;
     color: #40308e;
