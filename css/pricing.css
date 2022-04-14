@@ -15,12 +15,12 @@
     /* padding: 27px 20px; */
     font-size: 13px;
     /*font-weight: 600;*/
-    color: #40308e;
+    color: #fff;
 }
 
-#pageNav .nav-item > a:hover,
-#pageNav .nav-item > a:focus:hover {
-    color: #838889;
+#pageNav .nav-item > a:hover, #pageNav .nav-item > a:focus:hover {
+  color: #BB5CFF;
+  text-decoration: none;
 }
 
 #pageNav .nav-item.active > a,
