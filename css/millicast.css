@@ -153,7 +153,8 @@ img.logo-img {
 }
 
 .page-content {
-    margin-bottom: 6em;
+    background-color: #fff;
+    margin-bottom: 0;
 }
 
 hr {
@@ -761,7 +762,6 @@ video {
     width: auto;
 }
 
-
 .hero-pricing {
     text-align: center;
         align-items: center;
@@ -772,18 +772,22 @@ video {
     background: linear-gradient(180deg, #222222, #40308e);
 }
 
-.hero-pricing h1{
+.hero-pricing h1 {
     padding-top: 1.75em;
     font-size: 3.5em;
     font-weight: 300;
-    font-style: italic;
+    font-style: normal !important;
 }
 
-.hero-pricing h3{
+.hero-pricing h3 {
     font-size: 1.25em;
     font-weight: 100;
     /*margin-bottom: 1em;*/
     line-height: 25px;
+}
+
+.pricing-container {
+	background-color: #fff;
 }
 
 .pricing-table {
@@ -819,7 +823,6 @@ a.pricing-button {
     border: 0
 }
 
-
 .table-responsive .table {
     border: 0
 }
@@ -845,10 +848,6 @@ a.pricing-button {
     border: 1px solid #FFF
 }
 
-
-
-
-
 /* revised - jer */
 
 .sect-base {
@@ -862,11 +861,10 @@ a.pricing-button {
 }
 .who-needs.bg-dark {
     background: linear-gradient(180deg, #14141A 0%, #40308D 100%);
-
 }
+
 #pageNav.bg-dark {
     background: #14141A !important;
-
 }
 
 .pb-20 {
@@ -878,7 +876,6 @@ a.pricing-button {
 }
 .mb-30-extra-margin{
     margin-bottom: 2.3em;
-
 }
 
 .col-sm-4{
@@ -913,8 +910,6 @@ a.pricing-button {
 }
 
 
-
-
 /* Choose Millicast */
 
 .choose-btn {
@@ -935,7 +930,6 @@ a.pricing-button {
     font-size: 1.75em;
     padding-bottom: .25em;
     font-family: 'avenir-next-regular',sans-serif;
-
 }
 
 .choose {
@@ -951,7 +945,6 @@ a.pricing-button {
     line-height: 1.8em;
     vertical-align: text-top;
 }
-
 
 /* Who needs realtime streaming items */
 
@@ -978,7 +971,6 @@ a.pricing-button {
     background-color:rgba(0,0,0,0.3);
     border:none;
     max-height: 100px;
-
 }
 
 .who-needs #leftList .list-group-item img, .who-needs #rightList .list-group-item img {
@@ -998,7 +990,6 @@ a.pricing-button {
 .who-needs #rightList {
     padding-left: 0;
     margin-bottom: 1.25em;
-
 }
 
 .who-needs .list-group-item img {
@@ -1033,8 +1024,6 @@ font-feature-settings: 'tnum' on, 'lnum' on;
 /* Gray / Light 02 */
 
 color: #B9B9BA;
-
-
 }
 
 .why-need img {
@@ -1048,7 +1037,6 @@ color: #B9B9BA;
 
 .why-need p{
     font-size: 0.85em;
-
 }
 
 .why-need #itemsView .item-title {
@@ -1057,13 +1045,11 @@ color: #B9B9BA;
     margin-top: .75em;
     margin-bottom: .5em;
     text-align: center;
-
 }
+
 .why-need-space{
     margin-top: 2em;
-
 }
-
 
 /* How does realtime streaming work items */
 
@@ -1080,7 +1066,6 @@ color: #B9B9BA;
     margin-bottom: 1.5em;
 }
 
-
 /* How do i get it. */
 
 .get-sect #formView .btn{
@@ -1089,7 +1074,6 @@ color: #B9B9BA;
     margin-right: auto;
     margin-bottom: 4em;
     margin-top: 2em;
-
 }
 
 footer .breadcrumb{
@@ -1105,11 +1089,6 @@ footer .breadcrumb > li + li:before {
     margin-bottom: 0px;
 }
 /* / end - jer */
-
-
-
-
-
 
 
 .row-reverse {
@@ -1171,7 +1150,6 @@ footer .breadcrumb > li + li:before {
         padding-right: 0;
         padding-left: 0;
     }
-    
 }
 
 .services {
@@ -1533,7 +1511,6 @@ hr {
     color: #777777;
 }
 
-
 .header-cloud {
     text-align: center;
 }
@@ -1863,7 +1840,6 @@ hr {
     font-size: 1.25em;
     font-weight: 500;
     line-height: 1.8em;
-
 }
 
 .dedicated-section-header p {
@@ -1989,6 +1965,7 @@ hr {
     background-color: #ffffff;
     padding-right: 8em;
     padding-left: 8em;
+    color: #000;
 }
 
 .dedicated-faqs h1 {
@@ -1996,7 +1973,7 @@ hr {
     font-size: 1.75em;
     line-height: 1.75em;
     font-weight: 300;
-    color:#222222;
+    color: #000;
     margin-bottom: 1.5em;
 }
 
@@ -2028,7 +2005,7 @@ hr {
     font-size: 1.75em;
     line-height: 1.75em;
     font-weight: 300;
-    color:#222222;
+    color: #000;
     margin-bottom: 1.5em;
     margin-top:100px;
 }
@@ -2039,7 +2016,7 @@ hr {
     line-height: 1.0em;
     margin-bottom: -0.2em;
     font-weight: 600;
-    color:#222222;
+    color: #000;
 }
 
 .faqs-page h3 {
@@ -2048,7 +2025,7 @@ hr {
     line-height: 1.5em;
     margin-bottom: 2.5em;
     font-weight: 400;
-    color:#222222;
+    color: #000;
 }
 
 .networkmap {
@@ -2117,14 +2094,16 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 3em;
+    margin-bottom: 3em;
 }
 
 .header-about h1 {
     font-size: 1.5em;
     line-height: 1.5em;
+    margin-top: 2em;
     margin-bottom: .2em;
-    text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .header-about p {
@@ -2136,7 +2115,6 @@ hr {
     .header-about h1 {
         font-size: 2.5em;
     }
-
     .header-about p {
         font-size: 1.4em;
     }
@@ -2154,16 +2132,16 @@ hr {
     color: #888888;
     font-weight: 100;
     margin-bottom: 1.2em;
-
 }
+
 .privacy-section h1, h4, strong{
     font-size: 2em;
     font-weight: 300;
     margin-bottom: 1.2em;
-
 }
 
 .about-section {
+    background-color: #fff;
     padding-bottom: 2em;
 }
 
@@ -2172,7 +2150,6 @@ hr {
     color: #888888;
     font-weight: 100;
     margin-bottom: 1.2em;
-
 }
 
 .contact-section {
@@ -2233,16 +2210,13 @@ hr {
     padding: 5px 10px;
 }
 
-
 .contact-section textarea {
     resize: none;
     height: 100px;
     padding: 10px;
 }
 
-
 .contact-section .btn-submit {
-    
     background: #40308e;
     margin-top: .5em;
     color: white;
@@ -2437,6 +2411,3 @@ li > div {
 .country-select {
     width: 100%;
 }
-
-
-

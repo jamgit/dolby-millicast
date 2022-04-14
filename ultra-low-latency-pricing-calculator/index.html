@@ -1,95 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <title>Ultra Low Latency Video Streaming - Cost Calculator</title>
-  <meta name="description" content="Ultra-low latency streaming platform for broadcasting video in real-time."/>
-  <meta name="keywords" content="ultra-low latency, WebRTC, Broadcasting, Real-time, sub-second latency, streaming, CDN" />
-
+  <title>Ultra-Low-Latency Pricing Calculator Dolby - Millicast</title>
+  <meta name="description" content="Live streaming platform for broadcasting audio and video with sub-second, real-time latency. Start for free and stream to your viewers instantly." />
+  <meta name="keywords" content="Livestream, Broadcaster, Ultra-low latency CDN, WebRTC, Broadcasting, Real-time, sub-second streaming" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+  <meta name="author" content="dolby.io">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MillicastRTC">
+  <meta name="twitter:title" content="Millicast - Real-Time Video Streaming Platform">
+  <meta name="twitter:description" content="Use Millicast to broadcast your live audio and video streams in sub-second latency to any device at any scale.">
+  <meta name="twitter:image" content="https://millicast.com/img/millicast-logo-solo-small.jpg">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122476980-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-122476980-1');
-</script>
-
-
-  <!-- Bootstrap Core CSS v3.3 -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122476980-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-122476980-1');
+  </script>
+  <!-- Bootstrap 4.3.1 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
   <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
 
   <!-- Theme CSS -->
   <link href="../css/millicast.css" rel="stylesheet">
-
-  
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/pricing.css" rel="stylesheet">
 </head>
-
 <body id="page-top">
+<div class="">
   <!-- Navigation -->
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-        </button>
-
-        <a href="../">
-          <div class="navbar-brand">
-            <img
-              src="../img/icons/millicast-logo-h.svg"
-              alt="Millicast - Real-Time CDN"
-            />
-          </div>
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
-          </li>
-         <li>
-            <a class="page-scroll" href="https://docs.millicast.com/docs" target="_blank">Docs</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="https://docs.millicast.com/reference/welcome-rest-api" target="_blank">API</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="../what-is-low-latency-streaming/">FAQ</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="../about/" target="_blank">About</a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="https://dash.millicast.com/#/signin">
-              Login
-            </a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="/pricing">
-              <b>Sign Up</b>
-            </a>
-          </li>
-
-        </ul>
-      </div>
+  <nav id="pageNav" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark no-gutters">
+    <a class="navbar-brand" href="../index.html" style="margin-left: 9px;">
+      <img src="../img/logos/dolbyio-x-millicast-logo.svg" alt="Millicast - Real-Time CDN" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageNavCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div id="pageNavCollapse" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+          <a class="page-scroll" href="../about/index.html">About</a>
+        </li>
+       <li class="nav-item">
+          <a class="page-scroll" href="../what-is-low-latency-streaming/index.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="../pricing/index.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://millicast.medium.com/" target="_blank">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://docs.millicast.com/docs" target="_blank">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="https://docs.millicast.com/reference/welcome-rest-api" target="_blank">API</a>
+        </li>
+        <li class="nav-item"> 
+          <a class="page-scroll" href="https://dash.millicast.com/#/signin">
+            Login
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="page-scroll" href="../pricing/index.html">
+            <b>Sign Up</b>
+          </a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -101,11 +88,9 @@
             <a href="https://dash.millicast.com/#/signup?planId=28" target="_blank">
           <button class="btn btn-primary" style="height: 40px; padding: 0px 20px; font-weight:400; font-size:1em;">Try for Free</button>
         </a>
-
   </div>
 
-    <!-- pricing table -->
-
+	<!-- pricing table -->
 
   <!-- Main Content -->
   <div class="page-content calculator-section">
@@ -114,9 +99,9 @@
 
         <div class="col-md-6">
           <h1 id="display-bandwidth-title"></h1>
-          <p style="font-size:x-large;" id="display-bandwidth-text"></h2>
+          <p style="font-size:x-large;" id="display-bandwidth-text"></p>
           <h1 id="display-minutes-title"></h1>
-          <p style="font-size:x-large;" id="display-minutes-text"></h2>
+          <p style="font-size:x-large;" id="display-minutes-text"></p>
 
           <h1 id="display-suggested-plan-title">
             What plan is best for me?
@@ -205,7 +190,7 @@
         How am I billed for bandwidth usage? 
       </h2>
       <h3>
-        Each plan includes a pool of bandwidth and once this pool is used, you will begin incurring per GB overage fees at the corresponding rate of your plan. Alternatvively, you can upgrade to the next pricing plan to avoid unexpected overage fees. See <a href="../pricing" target="_blank">pricing page</a> for per GB pricing.
+        Each plan includes a pool of bandwidth and once this pool is used, you will begin incurring per GB overage fees at the corresponding rate of your plan. Alternatvively, you can upgrade to the next pricing plan to avoid unexpected overage fees. See <a href="../pricing/index.html" target="_blank">pricing page</a> for per GB pricing.
       </h3>
 
       <h2>
@@ -225,71 +210,51 @@
 
   </section>
 
-
-  <footer class="main-footer">
-    <div class="row">
-
-      <div class="col-sm-6">
-
-        <ul class="breadcrumb" style="padding-top:7px;">
-          <li role="presentation">
-            <a href="#">&copy; 2021</a>
-          </li>
-          <li role="presentation">
-            <a href="https://demo.millicast.com/?codec=h264&nosimulcast" target="_blank">Demo</a>
-          </li>
-          <li role="presentation">
-            <a href="../about/">About</a>
-          </li>
-
-                <li>
-                    <a class="page-scroll" href="https://millicast.medium.com/" target="_blank">Blog</a>
-                </li>
-
-          <li role="presentation">
-              <a href="https://dash.millicast.com/#/signup?planId=28">Sign Up</a>
-          </li>
-          <li role="presentation">
-              <a href="../privacy/">Privacy</a>
-          </li>
-          <li role="presentation">
-              <a href="../terms">Terms</a>
-          </li>
-          <li role="presentation">
-              <a href="../contactus/">Contact</a>
-          </li>
-        </ul>
-
-      </div> 
-
-      <div class="col-sm-6">
-          <ul class="breadcrumb pull-right">
-            <li role="presentation">
-              <a href="https://twitter.com/millicastRTC" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="https://medium.com/@millicast" target="_blank">
-                <i class="fa fa-medium"></i>
-              </a>
-            </li>
-            <li role="presentation">
-                <a href="https://www.facebook.com/millicastRTC/" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li role="presentation">
-                <a href="#"><i class="fa fa-envelope-o" ></i> hello@millicast.com</a>
-            </li>
-            <li role="presentation" class="contact">
-              <img src="../img/icons/millicast-logo-light-grey.svg" alt="Real-Time CDN" />
-            </li>
-          </ul>
+  <footer class="main-footer-sect d-flex align-items-center justify-content-lg-between flex-column flex-lg-row p-4 border-0"> 
+      <div class="d-flex flex-wrap justify-content-center mb-2">
+        <div class="px-2">
+          <a href="#">&copy; 2021</a>
+        </div>
+        <div class="px-2">
+          <a href="../privacy/index.html">Privacy</a>
+        </div>
+        <div class="px-2">
+          <a href="../terms/index.html">Terms</a>
+        </div>
+        <div class="px-2">
+          <a href="../contactus/index.html">Contact</a>
+        </div>
       </div>
-    </div>
-  </footer>
 
+      <div class="d-flex flex-column-reverse flex-md-row align-items-center mb-2">
+        <div class="d-flex flex-row">
+          <div class="px-2">
+            <a href="https://twitter.com/millicastRTC" target="_blank">
+              <img src="../img/icons/icon-social-twitter-dbio.svg" width="24" height="14" alt="Twitter" />
+            </a>
+          </div>
+          <div class="px-2">
+            <a href="https://medium.com/@millicast" target="_blank">
+              <img src="../img/icons/icon-social-medium-dbio.svg" width="27" height="17" alt="Medium" />
+            </a>
+          </div>
+          <div class="px-2">
+            <a href="https://www.facebook.com/millicastRTC/" target="_blank">
+              <img src="../img/icons/icon-social-facebook-dbio.svg" width="24" height="14" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+        <div class="d-flex flex-row">
+          <div class="px-2">
+            <a href="mailto:hello@millicast.com"><img src="../img/icons/icon-social-email-dbio.svg" width="24" height="19" alt="Email" /> hello@millicast.com</a>
+          </div>
+        </div>
+        <div class="px-2">
+          <a href="../index.html"><img src="../img/logos/dolbyio-x-millicast-logo.svg" alt="Real-Time CDN" style="height: 24px;" /></a>
+        </div>
+      </div>
+  </footer>
+</div>
     <script>
     const calculateUsage = (value) => {
       const numParticipants = parseInt(document.getElementById('numParticipants').value);
@@ -341,18 +306,20 @@
   </script>
 
 
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
-
-<script>
+  <!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
+	<script src="../js/xirsys.min.js"></script>
+	<script>
   window.intercomSettings = {
     app_id: "cuc3ois2"
   };
-</script>
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-
+	</script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 
 </body>
 </html>
