@@ -1,16 +1,16 @@
 /* colors */
+
 .text-black {
-  color: black;
+  color: #fff;
 }
 
 /* text */
-.sect-title {
-  font-size: 1.44em;
-}
 .sect-desc {
-  font-size: 0.83em;
+  max-width: 864px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
-
 .hero-main {
   margin-top: 75px;
   position: relative;
@@ -172,11 +172,15 @@
 }
 .customer-logos-item {
   vertical-align: text-top;
-  margin-top: 1.5em;
+  /* margin-top: 1.5em; */
   /* margin-bottom: 1.5em; */
   /* margin-right: 1em; */
   /* margin-left: 1em; */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  /* height: 160px; */
+  align-items: center;
 }
 .customer-logos-item img{
     vertical-align: text-top;
