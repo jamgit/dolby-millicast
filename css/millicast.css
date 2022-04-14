@@ -861,7 +861,8 @@ a.pricing-button {
     background: #14141a !important;
 }
 .bg-dark {
-    background: linear-gradient(180deg, #222222, #40308e);
+    background: linear-gradient(180deg, #14141A 0%, #40308D 100%);
+
 }
 
 .pb-20 {
@@ -881,16 +882,15 @@ a.pricing-button {
 }
 
 .sect-title {
-    margin-top: 1.75em;
+    margin-top: 1.25em;
     margin-bottom: .25em;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 125%;
-    /* identical to box height, or 60px */
     text-align: center;
     letter-spacing: -0.0125em;
     font-feature-settings: 'tnum' on, 'lnum' on, 'ordn' on;
-    color: #B9B9BA;
+    font-family: 'avenir-next-medium', sans-serif;
 }
 
 .sect-desc {
