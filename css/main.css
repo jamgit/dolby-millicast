@@ -18,7 +18,7 @@
   /* min-height: 450px; */
   width: 100vw;
   overflow: hidden;
-  background-image:url('../img/millicast-hero-dolbyio.jpg');
+  background-image: url('../img/millicast-hero-dolbyio.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -42,7 +42,7 @@
 }
 /* min-width: 150px; */
 .key-points-row{
-  background: #f1f1f1;
+  background: rgba(177, 133, 255, 0.07);
    /*margin-top: 1.0em;*/
    width: auto;
 }
@@ -92,6 +92,7 @@
 #howAndWhy .works-desc img{
   width: 50px;/* 3em; */
 }
+
 
 .choose-title {
   /* font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;

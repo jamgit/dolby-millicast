@@ -73,6 +73,7 @@ body {
     overflow-x: hidden;
     font-family: 'avenir-next-regular',sans-serif;
     color: #838889;
+    background-color: #14141A;
 }
 
 p {
@@ -677,7 +678,7 @@ video {
 }
 
 .key-points-item h1 {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    /*font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;*/
     font-size:  1.8em;
     font-weight: 300;
     padding-bottom: 0.4em;
@@ -826,10 +827,10 @@ a.pricing-button {
 }
 
 .bg-light {
-    background: #F9F9F9;
+    background: #14141a !important;
 }
 .bg-dark {
-    background: linear-gradient(180deg, #222222, #40308e);
+    background: #14141a !important;
 }
 
 .pb-20 {
@@ -903,7 +904,7 @@ a.pricing-button {
 }
 
 .choose {
-    background: #F9F9F9;
+    background: #14141a !important;
     padding-bottom: 2em;
     text-align: left;
     vertical-align: text-top;
