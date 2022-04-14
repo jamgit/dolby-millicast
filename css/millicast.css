@@ -72,7 +72,7 @@
 body {
     overflow-x: hidden;
     font-family: 'avenir-next-regular',sans-serif;
-    color: #838889;
+    color: #fff;
     background-color: #14141A;
 }
 
@@ -678,15 +678,12 @@ video {
 }
 
 .key-points-item h1 {
-    /*font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;*/
     font-size:  1.8em;
     font-weight: 300;
     padding-bottom: 0.4em;
-    color: #11330c;
 }
 
 .key-points-item p {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     color: #666666;
     font-size:  .8em;
 }
@@ -830,7 +827,7 @@ a.pricing-button {
     background: #14141a !important;
 }
 .bg-dark {
-    background: #14141a !important;
+    background: linear-gradient(180deg, #222222, #40308e);
 }
 
 .pb-20 {
@@ -873,7 +870,6 @@ a.pricing-button {
 
 }
 .scdark {
-    color: black;
     margin-bottom: .5em;
 }
 
@@ -1013,7 +1009,6 @@ a.pricing-button {
     margin-top: .75em;
     margin-bottom: .5em;
     text-align: center;
-    color: black;
 
 }
 .why-need-space{

@@ -14,13 +14,14 @@
 .hero-main {
   margin-top: 75px;
   position: relative;
-  min-height: 53vh;
+  min-height: 120vh;
   /* min-height: 450px; */
-  width: 100vw;
+  /* width: 100vw; */
   overflow: hidden;
   background-image: url('../img/millicast-hero-dolbyio.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .hero-main h1 {
@@ -59,17 +60,15 @@
 
 .key-points-item h1 {
   font-size: 1.48em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   padding-top: 15px;
   padding-bottom: 0.4em;
-  color: #120c33b3;
 }
 
 .key-points-item p {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-  color: #666666;
-  font-size: 0.66em;
+  color: #B9B9BA;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
 #howAndWhy .why-item img{
@@ -78,7 +77,6 @@
 #howAndWhy .why-item p{
   font-weight: 500;
   font-size: 0.83em;
-  color: black;
 }
 #howAndWhy .why-desc{
   font-size: 0.83em;
@@ -87,7 +85,6 @@
 #howAndWhy .works-desc p{
   font-size: 0.83em;
   font-weight: 100;
-  color: black;
 }
 #howAndWhy .works-desc img{
   width: 50px;/* 3em; */
@@ -143,19 +140,27 @@
 }
 
 .customer-logos-row{
-    background: #ffffff;
     width: 100%;
     /*padding-top: 1em;*/
     padding-left: 4em;
     padding-right: 4em;
 }
-.customer-logos-font {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-    color: #666666;
-    font-size:  .8em;
-    padding-top: 1.7em;
-    text-align: center;
+#custLogoView {
+  background: rgba(177, 133, 255, 0.07) !important;
+  padding-left: 90px !important;
 }
+.customer-logos-sect {
+  background-color: rgba(177, 133, 255, 0.07) !important;
+}
+.customer-logos-font {
+  /* font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; */
+  color: #35C8FF;
+  font-size: 14px;
+  padding-top: 1.2em;
+  text-align: center;
+  letter-spacing: .15em;
+}
+
 .customer-logos-blocks {
     vertical-align: text-top;
     align-items: top;
@@ -166,34 +171,31 @@
     margin-right: 1em; */
 }
 .customer-logos-item {
-    vertical-align: text-top;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    /*margin-right: 1em;
-    margin-left: 1em;*/
-    text-align: center;
+  vertical-align: text-top;
+  margin-top: 1.5em;
+  /* margin-bottom: 1.5em; */
+  /* margin-right: 1em; */
+  /* margin-left: 1em; */
+  text-align: center;
 }
 .customer-logos-item img{
     vertical-align: text-top;
 
 }
 .customer-logos-item h1 {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     font-size:  1.2em;
     font-weight: 400;
     padding-bottom: 0.4em;
-    color: #666666;
+    color: #fff;
     letter-spacing: 0.05em;
 
 }
 .customer-logos-item p {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     color: #444444;
     font-size:  .8em;
     padding-top: .7em;
 }
 .customer-logos-item h4 {
-    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
     color: #444444;
     font-size:  .8em;
     font-weight: bold;
