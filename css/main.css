@@ -68,6 +68,10 @@
 .hidden {
  display:none!important
 }
+/* end addons */
+body.privacy-terms {
+  background: #fff;
+}
 /* colors */
 .text-black {
   color: #fff;

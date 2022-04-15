@@ -168,10 +168,6 @@ hr {
 #pageNav .nav-item.signup > a {
     color: #BB5CFF;
 }
-.general p {
-    margin-bottom: 3em;
-    font-size: 1.25em;
-}
 
 .text-primary {
     color: #40308e !important;
@@ -2149,18 +2145,20 @@ hr {
     }
 }
 
-.privacy-section{
+.privacy-section {
     margin-top: 100px;
-    font-size: .8em;
-    color: #888888;
+    font-size: 16px;
+    color: #14141A;
     font-weight: 100;
     margin-bottom: 1.2em;
+    max-width: 860px;
 }
 
-.privacy-section h1, h4, strong{
+.privacy-section h1, h4, strong {
     font-size: 2em;
     font-weight: 300;
-    margin-bottom: 1.2em;
+    margin-bottom: 12px;
+    margin-top: 24px;
 }
 
 .about-section {
