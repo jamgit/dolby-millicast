@@ -2,11 +2,11 @@
 .ctablock_container {
   text-align: center;
   padding: 25px 0 0 0;
-  background-color: #14141a !important;
-/*  background-position: center;
+/*  background-color: #14141a !important; */
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../img/cta-background1.png');*/
+  background-image: url('../img/cta-background1.png');
 }
 /*.btn-primary {
   background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
