@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <title>Contact Dolby - Millicast</title>
-  <meta name="description" content="Live streaming platform for broadcasting audio and video with sub-second, real-time latency. Start for free and stream to your viewers instantly." />
-  <meta name="keywords" content="Livestream, Broadcaster, Ultra-low latency CDN, WebRTC, Broadcasting, Real-time, sub-second streaming" />
+   <meta name="description" content="Ultra-low latency streaming platform for broadcasting live audio and video with sub-second, real-time latency. Sign up for free today.">
+  <meta name="keywords" content="ContactUs, Live stream, Ultra-low latency, WebRTC, Broadcasting, Real-time, sub-second streaming">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
@@ -23,6 +23,7 @@
   </script>
   <!-- Bootstrap 4.3.1 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- Custom Fonts -->
   <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
@@ -32,6 +33,13 @@
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/pricing.css" rel="stylesheet">
 </head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
 <body id="page-top">
 <div class="">
   <!-- Navigation -->
@@ -220,21 +228,72 @@
         </div>
       </div>
   </footer>
-</div>
-  <!-- jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
-	<script src="../js/xirsys.min.js"></script>
-	<script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="../js/xirsys.min.js"></script>
+
+<script type="text/javascript">
+  const url = 'https://www.millicast.com/contact_form/form1';
+  $(function () {
+    let elWelcome = $('#welcome-msg');
+    let elContact = $('#contact');
+    let elSuccess = $( '#success-msg' );
+    let elFail = $( '#fail-msg' );
+    let elSubmit = $( '.btn-submit' );
+
+    // Handler for .ready() called.
+    elSuccess.height(elContact.height());
+
+    elContact.submit(function(ev){
+      ev.preventDefault(); // to stop the form from submitting
+
+      if(!elFail.hasClass('hidden'))elFail.addClass('hidden');
+      /* Validations go here */
+      // If all the validations succeeded
+      const data = $(this).serializeArray();
+      const method = 'POST',
+            contentType = 'application/x-www-form-urlencoded';
+
+      const requestData = {url, method, contentType, data};
+      console.log('requestData ', requestData);
+
+      $.ajax(requestData)
+        .fail((jqXHR, textStatus, errorThrown) => {
+          console.log( 'fail ', jqXHR.status, textStatus, errorThrown);
+          if(jqXHR.status === 200){
+            //how?
+          }
+          //an error has occurred
+          elFail.removeClass('hidden');
+        })
+        .done(( data, textStatus, jqXHR ) => {
+          console.log('done ', data, textStatus, jqXHR.status);
+          if(jqXHR.status !== 200){
+            //
+          }
+          //a success has occurred
+          elWelcome.addClass('hidden');
+          elContact.addClass('hidden');
+          elSubmit.addClass('hidden');
+          elSuccess.removeClass('hidden');
+        })
+        .always(() => {
+          elContact.trigger('reset');
+        });
+    });
+
+  });
+</script>
+
+<script>
   window.intercomSettings = {
     app_id: "cuc3ois2"
   };
-	</script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
 
 </body>
 </html>

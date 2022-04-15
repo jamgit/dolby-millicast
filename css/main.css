@@ -64,6 +64,10 @@
 #page-top.ltebgpage {
   background: #fff;
 }
+/* forms */
+.hidden {
+ display:none!important
+}
 /* colors */
 
 .text-black {
@@ -151,7 +155,9 @@
 #howAndWhy .why-item p {
   font-weight: 500;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-top: 0 !important;
+  margin-left: 6px;
 }
 #howAndWhy .works-desc p {
   font-size: 17px;
