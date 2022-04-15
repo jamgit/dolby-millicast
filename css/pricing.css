@@ -1,3 +1,7 @@
+body.pricingpage {
+  background: #fff;
+}
+
 #pageNav {
   min-height: 75px;
 }
@@ -35,19 +39,22 @@
 }
 
 .hero-pricing h1 {
-  font-size: 2.8em;
-  font-weight: 300;
-  font-style: italic;
+  font-size: 54px;
+  font-weight: 600;
+  text-shadow: 2px 2px 7px #222222;
+  max-width: 832px;
+  font-family: 'avenir-next-medium', sans-serif;
 }
+
 .hero-pricing h3 {
   font-size: 1.03em;
-  font-weight: 100;
+  font-weight: 500;
   /* margin-bottom: 1em; */
   line-height: 25px;
+  padding: .75em;
 }
 
 .pricing-table h1{
-  font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.75em;
   font-weight: 300;
   text-align: center;
@@ -58,7 +65,6 @@
 }
 
 #plansTable {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   color:#666666;
   font-size: 14px;
 }
@@ -162,7 +168,6 @@
 .section-title {
     font-weight: 300;
     font-size: 1.45em;
-    font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
 }
 
 .text-ultra-dk-grey {
