@@ -164,4 +164,12 @@ body.pricingpage {
   color: #222;
 }
 
+@media (max-width: 480px) {
+  #pageNav .navbar-brand img {
+  height: 27px;
+  /* margin-left: 1em; */
+  /* margin-top: 19px; */
+}
+}
+
 

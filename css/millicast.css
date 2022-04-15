@@ -1969,11 +1969,16 @@ hr {
 }
 
 .dedicated-faqs {
-    padding: 2em;
+    padding: 2em 8em;
     background-color: #ffffff;
-    padding-right: 8em;
-    padding-left: 8em;
     color: #000;
+}
+@media (max-width: 480px) {
+.dedicated-faqs {
+  padding: 2em;
+  background-color: #ffffff;
+  color: #000;
+}
 }
 
 .dedicated-faqs h1 {

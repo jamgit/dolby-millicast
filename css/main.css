@@ -289,3 +289,11 @@ body.privacy-terms {
     font-size:  .8em;
     font-weight: bold;
 }
+@media (max-width: 480px) {
+.hero-main {
+  margin-top: 0;
+}
+.hero-main h1 {
+  font-size: 34px;
+}
+}
