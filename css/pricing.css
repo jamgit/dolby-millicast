@@ -102,16 +102,6 @@ body.pricingpage {
   font-weight: 200;
   font-size: 0.85em;
 }
-.main-footer-sect {
-  background: #14141B;
-  white-space: nowrap;
-  min-height: 100px;
-}
-.main-footer-sect a {
-  text-decoration: none;
-  font-size: 0.75em;
-  color: white;
-}
 
 @media (max-width: 767px) {
   #plansTable #featureDesc {

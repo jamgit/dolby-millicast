@@ -69,7 +69,6 @@
  display:none!important
 }
 /* colors */
-
 .text-black {
   color: #fff;
 }
@@ -78,6 +77,17 @@
       float: none;
     }
 /* text */
+.main-footer-sect {
+  background: #14141B;
+  white-space: nowrap;
+  min-height: 100px;
+  padding-left: 6em !important;
+}
+.main-footer-sect a {
+  text-decoration: none;
+  font-size: 0.75em;
+  color: white;
+}
 .sect-desc {
   max-width: 864px;
   text-align: center;
