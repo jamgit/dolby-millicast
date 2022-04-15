@@ -141,28 +141,19 @@
 #howAndWhy .why-item img{
   width: 30px;
 }
-#howAndWhy .why-item p{
+#howAndWhy .why-item p {
   font-weight: 500;
-  font-size: 0.83em;
+  font-size: 1em;
+  line-height: 1.6;
 }
-#howAndWhy .why-desc{
-  font-size: 0.83em;
-  font-weight: 300;
-}
-#howAndWhy .works-desc p{
-  font-size: 0.83em;
-  font-weight: 100;
+#howAndWhy .works-desc p {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'avenir-next-regular', sans-serif;
 }
 #howAndWhy .works-desc img{
-  width: 50px;/* 3em; */
-}
-
-
-.choose-title {
-  /* font-family: "Merriweather", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
-  padding-bottom: .25em; */
-  font-size: 1.45em;
+  width: 50px;
+  /* 3em; */
 }
 
 .who-needs #leftList .list-group-item, .who-needs #rightList .list-group-item{
