@@ -902,7 +902,7 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
 
 .sect-desc {
     font-size: 1em;
-    font-weight: 50;
+    font-weight: 500 !important;
     text-align: center;
     margin: 0;
 }
@@ -2031,7 +2031,7 @@ hr {
     text-align: left;
     font-size: 1.2em;
     line-height: 1.0em;
-    margin-bottom: -0.2em;
+    margin-bottom: 0.5em;
     font-weight: 600;
     color: #000;
 }

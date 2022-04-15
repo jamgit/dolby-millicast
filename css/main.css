@@ -1,11 +1,12 @@
 /* addons */
 .ctablock_container {
   text-align: center;
-  padding: 25px 0 45px;
-  background-position: center;
+  padding: 25px 0 0 0;
+  background-color: #14141a !important;
+/*  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../img/cta-background1.png');
+  background-image: url('../img/cta-background1.png');*/
 }
 /*.btn-primary {
   background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
@@ -117,7 +118,7 @@ body.privacy-terms {
   font-size: 54px;
   font-weight: 600;
   text-shadow: 2px 2px 7px #222222;
-  max-width: 632px;
+  max-width: 600px;
   font-family: 'avenir-next-medium', sans-serif;
 }
 .hero-main h2 {
