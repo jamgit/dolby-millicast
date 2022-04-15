@@ -2238,22 +2238,31 @@ hr {
     height: 100px;
     padding: 10px;
 }
-
 .contact-section .btn-submit {
-    background: #40308e;
-    margin-top: .5em;
-    color: white;
-    padding: 15px 45px;
-    min-width: 200px;
-    font-size: 1em;
-    text-decoration: none;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
+    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    padding: 12.5px 24px;
+    border: 1.5px solid;
+    border-color: transparent !important;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 126% 126%;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
     border-radius: 6px;
-    border: 3px solid #40308e;
 }
-
 .contact-section .btn-submit:hover {
-    background: #639d33;
-    border: 3px solid #639d33;
+    background: linear-gradient(0deg, rgba(62, 68, 254, 0.6), rgba(62, 68, 254, 0.6));
+    border-color: #3E49F4;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 14px rgb(62 68 254 / 26%);
 }
 
 .contact-section .btn-submit a:link,
