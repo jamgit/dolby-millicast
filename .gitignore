@@ -1,2 +1,5 @@
 # uncommitted repo files
 download/
+download
+# gzip_static files
+*.gz
