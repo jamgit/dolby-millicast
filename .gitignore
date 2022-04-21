@@ -3,3 +3,5 @@ download/
 download
 # gzip_static files
 *.gz
+# ignore mac specific files
+.DS_Store
