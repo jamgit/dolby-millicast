@@ -27,7 +27,7 @@
     }
     @font-face{
         font-family:"avenir-next-medium";
-        src:url("fonts/6149672/9548fa3a-05c3-47ef-a6d5-f2f6fef54f84.woff2") format("woff2"),url("6149672/7667f1c1-c3ca-4520-aead-66f9d93d55a0.woff") format("woff");
+        src:url("fonts/6149672/9548fa3a-05c3-47ef-a6d5-f2f6fef54f84.woff2") format("woff2"),url("fonts/6149672/7667f1c1-c3ca-4520-aead-66f9d93d55a0.woff") format("woff");
     }
     @font-face{
         font-family:"avenir-next-medium-it";
@@ -290,7 +290,7 @@ fieldset[disabled] .btn-xl.focus {
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 6px;top
+    border-radius: 6px;
 }
 
 .btn-alt {
@@ -303,8 +303,7 @@ fieldset[disabled] .btn-xl.focus {
 }
 
 .btn-primary {
-    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
-    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    box-shadow: 0 2px 4px rgba(97, 97, 97, 0.18), 0 4px 8px rgba(97, 97, 97, 0.18);
     padding: 12.5px 24px;
     border: 1.5px solid;
     border-color: transparent !important;
@@ -314,8 +313,7 @@ fieldset[disabled] .btn-xl.focus {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%) no-repeat center;
     background-size: 126% 126%;
     -webkit-transition: border-color 0.3s ease;
     -o-transition: border-color 0.3s ease;
@@ -350,7 +348,7 @@ fieldset[disabled] .btn-xl.focus {
     background: linear-gradient(0deg, rgba(62, 68, 254, 0.6), rgba(62, 68, 254, 0.6));
     border-color: #3E49F4;
     box-sizing: border-box;
-    box-shadow: 0px 8px 14px rgb(62 68 254 / 26%);
+    box-shadow: 0 8px 14px rgb(62 68 254 / 26%);
 }
 
 .btn-primary a:link,
@@ -386,7 +384,6 @@ fieldset[disabled] .btn-xl.focus {
 
 .btn-outline:hover {
     background: #838889;
-    border: #838889;
     border: 3px solid #838889;
     color: white;
 }
@@ -413,8 +410,8 @@ fieldset[disabled] .btn-xl.focus {
 .navbar-default .navbar-header .navbar-brand {
     height: 100%;
     display: flex;
-    justify-content: 'center';
-    align-items: 'center';
+    justify-content: center;
+    align-items: center;
     /*padding: 20px;*/
 }
 
@@ -457,8 +454,8 @@ fieldset[disabled] .btn-xl.focus {
 
 @media (min-width: 768px) {
     .navbar-default {
-        background-color: fade(white, 10%);
-        border-color: fade(white, 30%);
+        background-color: white;
+        border-color: white;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -482,7 +479,7 @@ fieldset[disabled] .btn-xl.focus {
 
     .navbar-default.affix {
         background-color: #f9f9f9;
-        border-color: fade(#838889);
+        border-color: #838889;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -509,10 +506,7 @@ fieldset[disabled] .btn-xl.focus {
 .main-footer {
     background-color: #222222;
     color: #c9c9c9;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em;
     line-height: 1.75em;
     white-space: nowrap;
     margin-bottom: 0;
@@ -620,12 +614,6 @@ video {
     justify-content: center;
 }
 
-#home-hero {
-    height: 66vh;
-    background: url("../img/video/xirsys-bkg-video.jpg") no-repeat bottom center;
-    background-size: cover;
-}
-
 .home-links a:link,
 .home-links a:visited,
 .home-links a:active {
@@ -694,7 +682,7 @@ video {
 .key-points {
     width:100%;
     vertical-align: text-top;
-    align-items: top;
+    align-items: start;
     margin-bottom: 30px;
     /* display: flex;
     margin-left: 1em;
@@ -703,10 +691,7 @@ video {
 
 .key-points-item {
     vertical-align: text-top;
-    margin-top: 2.5em;
-    margin-bottom: 1.5em;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin: 2.5em 1em 1.5em;
     text-align: center;
 }
 
@@ -859,7 +844,7 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
 .sect-base {
     align-items: center;
     justify-content: center;
-    margin-top: 0em;
+    margin-top: 0;
 }
 
 .bg-light {
@@ -920,7 +905,6 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
 
 .choose-btn {
     color: white;
-    border-color: #40308e;
     font-weight: 700;
     border-radius: 3px;
     font-size: 16px;
@@ -959,7 +943,7 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
     padding: 36px;
 }
 
-.who-needs #itemsView {
+.who-needs #itemsView1 {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -973,7 +957,7 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
     font-weight: 300;
     font-size: 1.75em;
     /*padding: 30px;*/
-    border-radius: 6;
+    border-radius: 6px;
     color: white;
     background-color:rgba(0,0,0,0.3);
     border:none;
@@ -1039,7 +1023,7 @@ color: #B9B9BA;
     width: auto;
 }
 
-.why-need #itemsView {
+.why-need #itemsView2 {
     text-align: center;
 }
 
@@ -1047,7 +1031,7 @@ color: #B9B9BA;
     font-size: 0.85em;
 }
 
-.why-need #itemsView .item-title {
+.why-need #itemsView2 .item-title {
     font-weight: 300;
     font-size: 1.75em;
     margin-top: .75em;
@@ -1063,10 +1047,7 @@ color: #B9B9BA;
 
 .how-sect .diag img{
     max-height: 450px;
-    margin-bottom: 2em;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3em auto 2em auto;
     display: block;
 }
 
@@ -1078,23 +1059,19 @@ color: #B9B9BA;
 
 .get-sect #formView .btn{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4em;
-    margin-top: 2em;
+    margin: 2em auto 4em auto;
 }
 
 footer .breadcrumb{
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    padding:0px 10px;
+    margin-bottom: 0;
+    padding:0 10px 0;
 }
 
 footer .breadcrumb > li + li:before {
     color: #ccc;
     content: "  ";
     padding: 0 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 /* / end - jer */
 
@@ -1214,28 +1191,6 @@ footer .breadcrumb > li + li:before {
     background: linear-gradient(90deg, #555555, #838889);
 }
 
-.map {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 35em;
-    color: #838889;
-    text-align: center;
-    padding-bottom: 5em;
-    padding-top: 5em;
-    background: #f9f9f9 url("../img/map.svg") no-repeat center;
-}
-
-.map h1 {
-    margin: 0;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 2em;
-    text-shadow: 2px 2px 10px #ffffff;
-}
-
 @media (min-width: 550px) {
     .map h1 {
         font-size: 2.25em;
@@ -1270,8 +1225,7 @@ footer .breadcrumb > li + li:before {
 
 .developer-section ul {
     list-style-type: none;
-    margin: 0;
-    margin-bottom: 1em;
+    margin: 0 0 1em;
     padding-left: 0;
 }
 
@@ -1307,9 +1261,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2em;
-    padding-top: 2.5em;
-    padding-bottom: 1.5em;
+    padding: 2.5em 2em 1.5em;
 }
 
 .dev-account h1 {
@@ -1323,8 +1275,7 @@ hr {
 
 .dev-account ul {
     list-style-type: none;
-    margin: 0;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0;
     padding-left: 0;
 }
 
@@ -1357,8 +1308,7 @@ hr {
     font-weight: 700;
     font-size: 1.25em;
     padding: 1em 2em;
-    margin: 20px;
-    margin-bottom: 2em;
+    margin: 20px 20px 2em 20px;
 }
 
 .pricing-main-header .selected {
@@ -1372,8 +1322,7 @@ hr {
 }
 
 .pricing-section {
-    background: linear-gradient(180deg, #fbfbfb, #eeeeee);
-    background-color: #f5f5f5;
+    background: #f5f5f5 linear-gradient(180deg, #fbfbfb, #eeeeee);
     padding: 2em;
 }
 
@@ -1613,16 +1562,18 @@ hr {
 .code-editor-content pre {
     background-color: #555555 !important;
     border: 0;
-    white-space: pre-wrap;
+
     /* css-3 */
-    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
     /* Mozilla, since 1999 */
-    white-space: -pre-wrap;
+    white-space: -moz-pre-wrap;
     /* Opera 4-6 */
-    white-space: -o-pre-wrap;
+    /* white-space: -pre-wrap; */
     /* Opera 7 */
-    word-wrap: break-word;
+    white-space: -o-pre-wrap;
     /* Internet Explorer 5.5+ */
+    word-wrap: break-word;
+
     color: white;
     font-size: 1.25em;
 }
@@ -2013,8 +1964,6 @@ hr {
 .faqs-page {
     padding: 2em;
     background-color: #ffffff;
-    padding-right: 2em;
-    padding-left: 2em;
 }
 
 .faqs-page h1 {
@@ -2064,7 +2013,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-      text-shadow: 1px 2px 0px #333333;
+      text-shadow: 1px 2px 0 #333333;
 }
 
 .header-verticals h1 {
@@ -2179,9 +2128,8 @@ hr {
 }
 
 .contact-section {
-    padding-bottom: 1em;
     color: #838889;
-    margin-bottom: 0em;
+    margin-bottom: 0;
     padding-top: 85px;
     /*background: linear-gradient(180deg, #f9f9f9, #eeeeee);*/
     background: #ffffff;
@@ -2242,8 +2190,7 @@ hr {
     padding: 10px;
 }
 .contact-section .btn-submit {
-    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%);
-    box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+    box-shadow: 0 2px 4px rgba(97, 97, 97, 0.18), 0 4px 8px rgba(97, 97, 97, 0.18);
     padding: 12.5px 24px;
     border: 1.5px solid;
     border-color: transparent !important;
@@ -2253,8 +2200,7 @@ hr {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(99.69deg, #3E44FE -10.66%, #BB5CFF 114.64%) no-repeat center;
     background-size: 126% 126%;
     -webkit-transition: border-color 0.3s ease;
     -o-transition: border-color 0.3s ease;
@@ -2265,7 +2211,7 @@ hr {
     background: linear-gradient(0deg, rgba(62, 68, 254, 0.6), rgba(62, 68, 254, 0.6));
     border-color: #3E49F4;
     box-sizing: border-box;
-    box-shadow: 0px 8px 14px rgb(62 68 254 / 26%);
+    box-shadow: 0 8px 14px rgb(62 68 254 / 26%);
 }
 
 .contact-section .btn-submit a:link,
@@ -2288,7 +2234,7 @@ hr {
 
 .calculator-section {
     color: #838889;
-    margin-bottom: 0em;
+    margin-bottom: 0;
 }
 
 .calculator-section h1 {

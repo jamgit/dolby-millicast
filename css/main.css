@@ -31,12 +31,8 @@
   display: inline-block !important;
   border-radius: 6px;
   outline: none;
-  padding: 13.5px 26px !important;
   padding: 0.8333333333em 1.6em !important;
   border: 1px solid #FFFFFF !important;
-  background: initial;
-  background-color: transparent;
-  border-color: transparent;
   font-weight: bold;
   font-size: 15px;
   line-height: 150%;
@@ -44,8 +40,7 @@
   text-transform: uppercase;
   font-family: 'avenir-next-medium';
   color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: transparent no-repeat center;
   background-size: 126% 126%;
   -webkit-transition: border-color 0.3s ease !important;
   -o-transition: border-color 0.3s ease !important;
@@ -55,7 +50,7 @@
   background: linear-gradient(0deg, rgba(62, 68, 254, 0.6), rgba(62, 68, 254, 0.6));
   border-color: #3E49F4;
   box-sizing: border-box;
-  box-shadow: 0px 8px 14px rgb(62 68 254 / 26%);
+  box-shadow: 0 8px 14px rgb(62 68 254 / 26%);
   color: #fff;
 }
 .get-sect.sect-base.cta-pricing {
@@ -143,10 +138,7 @@ body.privacy-terms {
 
 .key-points-item {
   vertical-align: text-top;
-  margin-top: 2.5em;
-  margin-bottom: 1.5em;
-  margin-right: 1em;
-  margin-left: 1em;
+  margin: 2.5em 1em 1.5em;
   text-align: center;
   min-width: 150px;
 }
@@ -249,7 +241,7 @@ body.privacy-terms {
 
 .customer-logos-blocks {
     vertical-align: text-top;
-    align-items: top;
+    align-items: start;
     padding-bottom: 1em;
     margin-top: .7em;
     /* display: flex;
