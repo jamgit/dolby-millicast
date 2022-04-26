@@ -376,6 +376,58 @@
   };
 	</script>
 	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/cuc3ois2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+      <script>
+    const calculateUsage = (value) => {
+      const numParticipants = parseInt(document.getElementById('numParticipants').value);
+      const bitRate = parseInt(document.getElementById('bitrate').value);
+      const callLength = parseInt(document.getElementById('callLength').value);
+      const callsPerMonth = parseInt(document.getElementById('callsPerMonth').value);
+
+      const bandwidthCalculatedRaw = numParticipants * (bitRate / 8) * (60) * (callLength) * (callsPerMonth) * (0.000001)
+      const bandwidthCalculated = bandwidthCalculatedRaw.toLocaleString();
+      const minutesCalculated = (numParticipants * (callLength) * (callsPerMonth)).toLocaleString();
+
+      document.getElementById('display-minutes-title').innerHTML = "Total viewer minutes of:";
+      document.getElementById('display-minutes-text').innerHTML = minutesCalculated + ' Minutes';
+      document.getElementById('display-bandwidth-title').innerHTML = 'Bandwidth usage (GB/month):';
+      document.getElementById('display-bandwidth-text').innerHTML = bandwidthCalculated + ' GB';
+
+      document.getElementById('display-suggested-plan-title').innerHTML = 'Based on the information that you provided, the following plan is suggested for you:';
+      document.getElementById('display-suggested-plan-text').innerHTML = getPlan(bandwidthCalculatedRaw);
+      document.getElementById('display-suggested-plan-title').style = 'font-size:medium;'
+      document.getElementById('display-suggested-plan-text').style = 'font-size:x-large;margin-top:8px'
+      document.getElementById('display-suggested-plan-text-extra').style = 'font-size:small;font-family: Open Sans, Helvetica Neue, Arial, sans-serif;font-weight:100;margin-bottom:20px;'
+
+
+    }
+
+      function getPlan(bwidth){
+            document.getElementById('display-suggested-plan-text-extra').innerHTML = ''; 
+        if(bwidth < 2723) {
+            document.getElementById('signup-button').outerHTML = '<a href=https://dash.millicast.com/#/signup?planId=29 target=_blank><button id=signup-button class=\"btn btn-primary\" style=margin-left:0em;>Sign Up Now</button></a>';
+            return "Standard plan $495 /month";
+        }
+          else if(bwidth > 2723 && bwidth < 11667){
+            document.getElementById('signup-button').outerHTML = '<a href=https://dash.millicast.com/#/signup?planId=30 target=_blank><button id=signup-button class=\"btn btn-primary\" style=margin-left:0em;>Sign Up Now</button></a>';
+            return "Advanced plan $1,495 /month";
+          }
+          else if(bwidth > 11667 && bwidth < 40833){
+            document.getElementById('signup-button').outerHTML = '<a href=https://dash.millicast.com/#/signup?planId=31 target=_blank><button id=signup-button class=\"btn btn-primary\" style=margin-left:0em;>Sign Up Now</button></a>';
+            return "Pro plan $2,495 /month";
+          }
+          else if(bwidth > 40833 && bwidth < 77833){
+            document.getElementById('signup-button').outerHTML = '<a href=https://dash.millicast.com/#/signup?planId=32 target=_blank><button id=signup-button class=\"btn btn-primary\" style=margin-left:0em;>Sign Up Now</button></a>';
+            return "Elite plan $4,995 /month";
+          }
+          else if(bwidth > 77833){
+            document.getElementById('display-suggested-plan-text-extra').innerHTML = '<i><a href=../contactus/ target=_blank>click here to open the Millicast contact form &gt;</a></i>';
+            return "Contact us for special volume pricing.";
+
+          }
+        }
+
+
+  </script>
 
 </body>
 </html>
