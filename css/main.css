@@ -290,3 +290,9 @@ body.privacy-terms {
   font-size: 34px;
 }
 }
+.center-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
