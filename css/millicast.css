@@ -1070,7 +1070,7 @@ color: #B9B9BA;
 
 footer .breadcrumb{
     margin-bottom: 0;
-    padding:0 10px 0;
+    padding:0 10px;
 }
 
 footer .breadcrumb > li + li:before {
