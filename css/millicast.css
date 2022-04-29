@@ -883,6 +883,7 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
     letter-spacing: -0.0125em;
     font-feature-settings: 'tnum' on, 'lnum' on, 'ordn' on;
     font-family: 'avenir-next-medium', sans-serif;
+    color: #fff;
 }
 
 .sect-desc {
@@ -947,6 +948,10 @@ input.pricing-button:hover, button.pricing-button:hover, a.pricing-button:hover 
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#itemsView2 .col-sm-4 p {
+	color: #B9B9BA;
 }
 
 .who-needs #leftList {
@@ -1037,6 +1042,7 @@ color: #B9B9BA;
     margin-top: .75em;
     margin-bottom: .5em;
     text-align: center;
+    color: #fff;
 }
 
 .why-need-space{
